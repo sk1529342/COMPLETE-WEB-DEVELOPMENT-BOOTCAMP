@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animation and keyframes</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: goldenrod;
+            position: relative;
+            /* animation-iteration-count: 2; */
+            /* animation-name: saurav2; */
+            /* animation-duration: 6s; */
+            /* animation-timing-function: ease-out; */
+            /*ease-in:mtlb suru me slow aaega fir sudden fast& ease-out; means opposite*/
+            /* animation-fill-mode: forwards; */
+            /*backwards; mtlb backposition  & forwards; means bad wale position ko align krega*/
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate; */
+            /*Revise this all properties */
+
+            /* animation shorthand property */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+            animation: saurav3 1s ease-in 0s infinite backwards;
+            /* REMEMBER; TRICK; ANIMATION: KDTDCF & animation ke liye position dena necessary hai */
+        }
+
+        /* .box1{
+        height: 45px;
+            width: 45px;
+            background-color: rgb(218, 32, 209);
+            position: absolute;
+            animation: saurav3 2s ease-in 0s infinite forwards;
+    }
+    .box2{
+        height: 40px;
+            width: 40px;
+            background-color: rgb(244, 7, 23);
+            position: absolute;
+            animation: saurav3 3s ease-in 0s infinite forwards;
+    }
+    .box3{
+        height: 35px;
+            width: 35px;
+            background-color: rgb(22, 6, 247);
+            position: absolute;
+            animation: saurav3 4s ease-in 0s infinite forwards;
+    }
+    .box4{
+        height: 30px;
+            width: 30px;
+            background-color: rgb(11, 244, 3);
+            position: absolute;
+            animation: saurav3 5s ease-in 0s infinite forwards;
+    } */
+        @keyframes saurav2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 450px;
+                left: 0px;
+                box-shadow: 18px 18px 5px rgb(239, 9, 9);
+            }
+            50% {
+                top: 450px;
+                left: 450px;
+                box-shadow: -18px -18px 5px rgb(239, 231, 9);
+            }
+            75% {
+                top: 450px;
+                /* right: 0px; */
+                left: 1200px;
+                box-shadow: 18px 18px 5px rgb(3, 244, 11);
+            }
+            100% {
+                top: 0px;
+                left: 1200px;
+                box-shadow: -18px -18px 15px rgb(203, 6, 252);
+            }
+        }
+        @keyframes saurav1 {
+            from {
+                width: 250px;
+                height: 250px;
+                border: 2px solid yellowgreen;
+                background-color: goldenrod;
+                box-shadow: 8px 8px gray;
+
+            }
+
+            to {
+                width: 1400px;
+                height: 50px;
+                border: 10px solid red;
+                background-color: aqua;
+                box-shadow: -8px -8px rgb(203, 6, 252);
+            }
+        }
+
+
+        @keyframes saurav3 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 500px;
+                left: 0px;
+                box-shadow: 18px 18px 5px rgb(239, 9, 9);
+
+            }
+
+            50% {
+                top: 0px;
+                left: 1200px;
+                box-shadow: -18px -18px 5px rgb(239, 231, 9);
+
+            }
+
+            75% {
+                top: 500px;
+                /* right: 0px; */
+                left: 1200px;
+                box-shadow: 18px 18px 5px rgb(3, 244, 11);
+
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                box-shadow: -18px -18px 15px rgb(203, 6, 252);
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

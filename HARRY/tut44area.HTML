@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- PRACTICE ADDING GRID IN SECTION, NAVBAR -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+grid-template-areas: 
+'navbar navbar navbar navbar'
+'section section section aside'
+'footer footer footer footer';
+        }
+        .items{
+            border: 2px solid black;
+            background-color: aqua;
+            padding: 23px 34px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+grid-area: section;
+        }
+        #aside{
+grid-area: aside;
+        }
+        #footer{
+grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="navbar">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam architecto atque nisi autem dicta, deserunt assumenda veniam officiis! Doloribus at iste numquam magni, saepe totam vitae tempore esse enim! Quae sit aut dolorum! Magnam tempora nulla, doloremque fuga recusandae voluptas officiis explicabo ex vero debitis dolores odio at eos, iure neque ipsa rem qui necessitatibus. 
+        </div>
+        <div class="items" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam architecto atque nisi autem dicta, deserunt assumenda veniam officiis! Doloribus at iste numquam magni, saepe totam vitae tempore esse enim! Quae sit aut dolorum! Magnam tempora nulla, doloremque fuga recusandae voluptas officiis explicabo ex vero debitis dolores odio at eos, iure nequearum cum. Dolores, odio.z
+        </div>
+        <div class="items" id="aside">
+            necessitatibus. Doloremque, officiis assumenda nostrum tenetur, consequatur quos ipsam veniam consectetur cumque exercitationem quam placeat quo adipisci? Tempora voluptatibus accusantium explicabo numquam nihil possimus obcaecati asperiores veritatis optio, qui quas et eaque culpa natus laudantium repudiandae quia officia, necessitatibus, 
+        </div>
+        <div class="items" id="footer">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur dolore unde!
+        </div>
+        <div class="items">Items-1</div>
+        <div class="items">Items-2</div>
+        <div class="items">Items-3</div>
+        <div class="items">Items-4</div>
+        <div class="items">Items-5</div>
+        <div class="items">Items-6</div>
+        <div class="items">Items-7</div>
+        <div class="items">Items-8</div>
+        <div class="items">Items-9</div>
+        <div class="items">Items-10</div>
+        <div class="items">Items-11</div>
+        <div class="items">Items-12</div>
+        <div class="items">Items-13</div>
+        <div class="items">Items-14</div>
+    </div>
+</body>
+</html>

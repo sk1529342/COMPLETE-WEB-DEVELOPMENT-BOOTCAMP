@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating transition effect in CSS </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: black;
+        }
+
+        .container { display: flex;
+            height: 780px;
+            background-color: rgb(21, 255, 0);
+            justify-content: center;
+            align-items: center;}
+
+        .box {
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: background-color; */
+            /* transition-duration: 2s; */
+            /* transition-timing-function: ease-in; */
+            /* transition-delay: 1s; */
+            /* transition shorthand in one line */
+            /* transition: property duration timing-function delay; */
+            /* transition: color 2s ease-in-out 0s; */
+            /* transition: background-color 2s ease-in-out 0s; */
+            /* REMEMBER; TRICK; TRANS:PDTD */
+
+            transition: all 1s ease-in-out 0s;
+        }
+
+        .box:hover {
+            background-color: greenyellow;
+            height: 400px;
+            width: 400px;
+            color: red;
+            /* border: 5px solid blue; */
+            font-size: 25px;
+            border-radius: 100px;
+            box-shadow: 4px 4px 2px 2px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is my box
+        </div>
+    </div>
+</body>
+
+</html>

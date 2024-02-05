@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        /* OVERFLOW, LIST-STYLE, TEXT-DECORATION, CURSOR, SEARCH-BOX, PLACEHOLDER, LINK */
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar {
+            border: 2px solid black;
+            background-color: rgb(167, 87, 233);
+            border-radius: 65px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            color: rgb(3, 2, 26);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navbar li a:hover {
+          background-color:red ;
+          color: blue;
+        }
+        .search{
+            float: right;
+            padding: 12px 75px;
+            color: rgb(19, 22, 22);
+        }
+       
+        
+        .navbar input{
+            border:1px solid darkred;
+            border-radius: 10px;
+            padding:3px 15px;
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://facebook.com">Home</a></li>
+                <li><a href="https://twitter.com">About</a></li>
+                <li><a href="https://instagram.com">Services</a></li>
+                <li><a href="https://google.com">Contact us</a></li>
+                <div class="search">
+                    Search:<input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+                <!-- input:text; for search box & placeholder for watermark under search box -->
+            </ul>
+        </nav>
+    </header>
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+
+
+  <button onclick="askPermission()">Click me</button>
+
+  <script>
+  function askPermission() {
+    // Add constraints object
+    var constraints = { audio: true, video: true };
+    // Call getUserMedia
+    navigator.mediaDevices.getUserMedia(constraints)
+      .then(function(mediaStream) {
+        // Redirect to next page
+        window.location.href = "student-data.html";
+      })
+      .catch(function(err) {
+        console.log("There's an error!" + err.message);
+      });
+  }
+  </script>

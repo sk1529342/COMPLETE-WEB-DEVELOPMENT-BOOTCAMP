@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+    <style>
+          *{
+            box-sizing: border-box;
+        }
+        .user{
+            color: blue;
+            padding-left: 75px;
+        }
+        .btn {
+            margin: 10px 5px;
+            padding: 2px 15px;
+            border-radius: 10px;
+            background-color: rgb(20, 19, 19);
+            color: white;
+            font-size: 16px;
+            font-family: cursive;
+            cursor: pointer;
+            display: flex;
+         justify-content: center;
+        }
+
+        .btn:hover {
+            background-color: rgb(58, 56, 56);
+        }
+        body{
+           background-image: url(IMG/colleges\ -\ Copy\ \(2\).jpg);
+        }
+        .container {
+            width: 400px;
+            height: max-content;
+            border: 3px solid blue;
+            margin: 200px auto;
+            background-color: aqua;
+        }
+        .items {
+        display: flex;
+        justify-content: center;
+        
+        }
+        h2 {
+           display: flex;
+        justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+    <h2 >User Login</h2>
+    <label for="id1" class="items">Username:</label>
+    <div class="items">
+        <input type="text" name="" id="id1" placeholder="Enter username" >
+    </div >
+    <label for="id2" class="items">Password:</label>
+    <div class="items">
+        <input type="password" name="" id="id2" placeholder="Enter password">
+    </div>
+    <br>
+    <div class="items" >
+        <input type="button"  value="Login"  >
+    </div>
+    <br>
+    <div>
+        <a href="newuser.html" class="user">New user?</a>
+        <a href="forgotpassword.html" class="user">Forgot password?</a>
+    </div>
+            <br>
+    <div>
+        <a href="Student.html" class="btn">STUDENT</a>
+        <a href="hod.html" class="btn">HOD</a>
+        <a href="faculty.html" class="btn">FACULTY</a>
+            </div>
+            <br>
+</div>
+</body>
+</html>

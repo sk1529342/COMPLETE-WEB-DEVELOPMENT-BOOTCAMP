@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first project </title>
+    <style>
+        body {
+            background-image: url("img/gym4.jpg");
+            font-family: cursive;
+            padding: 0;
+            margin: 0;
+           color: white;
+        }
+
+        .left {
+            border: 2px solid greenyellow;
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            left: 26px;
+        }
+
+        .left div {
+            text-align: center;
+            /* line-height: 5px; */
+            font-size: 15px;
+
+        }
+
+        .left img {
+            width: 105px;
+            height: 66px;
+            filter: invert(100%);
+            border-radius: 120px;
+        }
+
+        .mid {
+            border: 2px solid greenyellow;
+            display: flex;
+            width: 54%;
+            margin: 30px auto;
+        }
+        .navbar{
+          display: flex;
+          margin: auto;
+        }
+.navbar li{
+    display: inline-block;
+    /* justify-content: center; */
+    padding: 2px 6px;
+}
+.navbar li a{
+    text-decoration: none;
+}
+        .right {
+            border: 2px solid greenyellow;
+            /* display: flex; */
+            /* float: right; */
+            display: flex;
+            position: absolute;
+            right: 35px;
+            top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+
+            <img src="img/logo.jpg" alt="">
+            <div>Saurav fitness</div>
+        </div>
+        <!-- middle box for navbar -->
+        <div class="mid">
+            <div class="navbar">
+
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">WEIGHT CALCULATOR</a></li>
+                    <li><a href="#">GYM TRAINER</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <div class="btn">
+                <button>Help?</button>
+                <button>Email us</button>
+            </div>
+
+        </div>
+    </header>
+
+</body>
+
+</html>

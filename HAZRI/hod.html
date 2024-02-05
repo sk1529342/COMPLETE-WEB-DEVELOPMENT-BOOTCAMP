@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hazri-2</title>
+    <link rel="stylesheet" href="hazri1.css">
+<style>
+/* Style the tab */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.btn {
+            margin: 0px 5px;
+            padding: 2px 15px;
+            /* border: 2px solid white; */
+            border-radius: 10px;
+            background-color: rgb(20, 19, 19);
+            color: white;
+            font-size: 16px;
+            font-family: cursive;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(58, 56, 56);
+        }
+        /* .btn1{
+          display: inline;
+          float: ;
+        } */
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+/* .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} */
+.tabcontent {
+            text-align: center;
+            border: 2px solid antiquewhite;
+            background-color: azure;
+            display: none;
+            padding: 56px 52px;
+            border: 1px solid #ccc;
+            /* border-top: none; */
+        }
+
+</style>
+</head>
+<body>
+
+  <u>
+<h1 style="display:flex ; justify-content: center;">Welcome to Head of Department</h1>
+  <p style="display:flex ; justify-content: center;">History has proven that those who dares to imagine the impossible are the ones who break all the human limitations.      ~  A.P.J KALAM</p>
+</u>
+<hr>
+<div>
+  <a href="user.html" class="btn1">Logout</a>
+</div>
+<hr>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'tab1')">Classroom</button>
+  <button class="tablinks" onclick="openCity(event, 'tab2')">Faculty</button>
+  <button class="tablinks" onclick="openCity(event, 'tab3')">Student</button>
+  <button class="tablinks" onclick="openCity(event, 'tab4')">Faculty Attendance</button>
+  <button class="tablinks" onclick="openCity(event, 'tab5')">Student Attendance</button>
+  <button class="tablinks" onclick="openCity(event, 'tab6')">Apply leave</button>
+  <button class="tablinks" onclick="openCity(event, 'tab7')">Time-table</button>
+</div>
+
+<div id="tab1" class="tabcontent" >
+  <u>
+
+    <h2 style="display:flex ; justify-content: center;">Add Classroom</h2>
+  </u>
+  <form action="noaction.php" style="display:flex ; justify-content: center;" >
+    <div class="classroom">
+    <label for="ids1">Enter Class Name: </label>
+            <div>
+              <input type="text" id="ids1">
+            </div>
+            <label for="ids2">Classroom no.: </label>
+            <div>
+              <input type="number" id="ids2">
+            </div>
+            <label for="ids3">Semester:</label>
+            <div>
+              <input type="number"  id="ids3">
+            </div>
+            <label for="ids4">Department:</label>
+            <div>
+              <select  id="ids4">
+                <option value="op1">CSE</option>
+                <option value="op2">BCA</option>
+                <option value="op3">CHE</option>
+                <option value="op4">ME</option>
+                <option value="op5">EE</option>
+                <option value="op6">ECE</option>
+                <option value="op7" selected>CSE</option>
+              </select>
+            </div>     
+            <br>  
+            <div id="ids5">
+              <input type="submit" value="Add class" class="btn">
+            </div>
+            <br>
+            <div id="ids6">
+              <a href="user.html" class="btn">Back</a>
+            </div>
+    </div>
+        </form>
+</div>
+
+
+
+<div id="tab2" class="tabcontent">
+  <u>
+
+    <h2 style="display:flex ; justify-content: center;">Add Faculty</h2>
+  </u>
+  <form action="noaction.php" style="display:flex ; justify-content: center;">
+    <div class="faculty"> 
+      <label for="a1">Faculty-Name: </label>
+      <div>
+        <input type="text" id="a1">
+      </div>
+      <label for="a2">Empcode: </label>
+      <div>
+        <input type="text" id="a2">
+      </div>
+      <label for="a3">Department:</label>
+      <div>
+        <select  id="a3">
+          <option value="bra1" selected>CSE</option>
+          <option value="bra2">ME</option>
+          <option value="bra3">CIVIL</option>
+          <option value="bra4">ECE</option>
+          <option value="bra5">EE</option>
+        </select>
+      </div>
+      <label for="a4">Subject: </label>
+      <div>
+        <input type="text" id="a4">
+      </div>
+      <label for="a5">Email: </label>
+      <div>
+        <input type="email" id="a5">
+      </div>
+      <label for="a6">Class Assigned: </label>
+      <div>
+        <input type="text" id="a6">
+      </div>
+      <label for="a7">Classroom no.: </label>
+      <div>
+        <input type="number" id="a7">
+      </div>
+      <label for="a8">Semester:</label>
+      <div>
+        <input type="number"  id="a8">
+      </div>
+      <label for="a9">Subject Code:</label>
+      <div>
+        <input type="number"  id="a9">
+      </div>
+      <label for="a10">Timing:</label>
+      <div>
+      <input type="time" name="time" id="a10">
+      </div>
+      <br>
+      <div id="a11">
+        <input type="submit" value="Assign" class="btn">
+      </div>
+      <br>
+      <div id="a12">
+        <a href="user.html" class="btn">Back</a>
+        <!-- <input type="button" value="Back" class="btn"> -->
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<div id="tab3" class="tabcontent">
+  <u>
+
+    <h2 style="display:flex ; justify-content: center;">Add Student</h2>
+  </u>
+  <form action="noactiontobetaken.php" style="display:flex ; justify-content: center;">
+    <div class="student">
+      <label for="id1">Enter class name : </label>
+      <div>
+        <input type="text" id="id1">
+      </div>
+      <label for="id2">Enter class Roomno: </label>
+      <div>
+       <input type="text" id="id2">
+      </div>
+      <label for="id3">Section: </label>
+      <div>
+        <input type="text" id="id3">
+      </div>
+      <label for="id7">Semester:</label>
+      <div>
+        <input type="number"  id="id7">
+      </div>
+      <label for="id8">Course:</label>
+      <div>
+        <select  id="id8">
+          <option value="op1">M.Tech</option>
+          <option value="op2">BCA</option>
+          <option value="op3">MCA</option>
+          <option value="op4">B.Com</option>
+          <option value="op5">B.Sc</option>
+          <option value="op6">B.A</option>
+          <option value="op7" selected>B.Tech</option>
+        </select>
+      </div>
+      <label for="id9">Branch:</label>
+      <div>
+        <select  id="id9">
+          <option value="bra1" selected>CSE</option>
+          <option value="bra2">ME</option>
+          <option value="bra3">CIVIL</option>
+          <option value="bra4">ECE</option>
+          <option value="bra5">EE</option>
+        </select>
+      </div>
+      <br>
+      <h3> Enter Students Details please:-</h3>
+      <table style="border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid black;">student Name </th>
+            <th style="border: 1px solid black;">Father's name </th>
+            <th style="border: 1px solid black;">Rollno.</th>
+            <th style="border: 1px solid black;">DoB</th>
+            <th style="border: 1px solid black;">status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Add your table rows here -->
+          <tr>
+            <td style="border: 1px solid black;">Amit khurana </td>
+            <td style="border: 1px solid black;">Anil Khurana </td>
+            <td style="border: 1px solid black;">211435</td>
+            <td style="border: 1px solid black;">22/2/2002 </td>
+            <td style="border: 1px solid black;"><div id="id10">
+              <input type="reset" value="Delete" >
+            </div><div id="id11">
+              <input type="submit" value="Save">
+            </div> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br> 
+      <div id="id10">
+        <input type="reset" value="Delete" class="btn">
+      </div>
+      <div id="id11">
+        <input type="submit" value="Save" class="btn">
+      </div>
+      </div>
+  </form>
+</div>
+<!-- this is for faculty attendance -->
+<div id="tab4" class="tabcontent">
+  <div>
+<table style="border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black;">name of faculty</th>
+      <th style="border: 1px solid black;">Emp code </th>
+      <th style="border: 1px solid black;">out-timmings</th>
+      <th style="border: 1px solid black;">Photos</th>
+      <th style="border: 1px solid black;">location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Add your table rows here -->
+    <tr>
+      <td style="border: 1px solid black;">vishal prasad </td>
+      <td style="border: 1px solid black;">2113</td>
+      <td style="border: 1px solid black;">3pm</td>
+      <td style="border: 1px solid black;"> </td>
+      <td style="border: 1px solid black;">moga road</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</div>
+
+<!-- 
+<div id="tab4" class="tabcontent">
+  <h3 style="display:flex ; justify-content: center;">Mark Attendance</h3>
+<form action="noaction.php" method="get"  style="display:flex ; justify-content: center;">
+<div class="mark">
+  <label for="id1">Class:</label>
+    <div >
+        <input type="text" placeholder="Enter class" id="id1">
+    </div>
+    <label for="id2">Roll.No</label>
+    <div >
+        <input type="text" placeholder="Enter Rook.No" id="id2">
+    </div>
+    <label for="id3">Subject:</label>
+    <div >
+        <input type="text" placeholder="Enter Subject"  id="id3" >
+    </div>
+    <label for="id4">Sub code:</label>
+    <div >
+        <input type="text" placeholder="Enter Sub code" id="id4">
+    </div>
+    <label for="id5">Semester: </label>
+    <div >
+        <input type="text" placeholder="Enter Semester"  id="id5">
+    </div>
+    <label for="id9">Department:</label>
+      <div>
+        <select  id="id9">
+          <option value="bra1" selected>CSE</option>
+          <option value="bra2">ME</option>
+          <option value="bra3">CIVIL</option>
+          <option value="bra4">ECE</option>
+          <option value="bra5">EE</option>
+        </select>
+      </div>
+</div>
+<label for="btn">Mark:</label>
+<div>
+    <input type="button" value="Mark Attendance" id="btn" style="display: flex; justify-content: center;">
+</div>
+</form>
+
+
+</div> -->
+
+<div id="tab5" class="tabcontent">
+  <u>
+    <h2 style="display:flex ; justify-content: center;">Student Attendance</h2>
+  </u>
+  <form action="noaction.php" method="get"  style="display:flex ; justify-content: center;">
+    <div class="mark">
+        <div >
+            <input type="text" placeholder="Enter Name" >
+        </div>
+        <br>
+        <div >
+            <input type="text" placeholder="Enter Roll.No" >
+        </div>
+        <br>
+        <div >
+            <input type="text" placeholder="Enter class" >
+        </div>
+        <br>
+        <div >
+            <input type="text" placeholder="Enter Subject" >
+        </div>
+        <br>
+        <div >
+            <input type="text" placeholder="Enter Semester" >
+        </div>
+        <label for="id9">Branch:</label>
+          <div>
+            <select  id="id9">
+              <option value="bra1" selected>CSE</option>
+              <option value="bra2">ME</option>
+              <option value="bra3">CIVIL</option>
+              <option value="bra4">ECE</option>
+              <option value="bra5">EE</option>
+            </select>
+          </div>
+    <br>
+   <div>
+    <a href="student-data copy.html" class="btn">View Attendance</a>
+    <!-- <input type="button" value="View Attendance" class="btn"> -->
+   </div>
+  </div>
+    </form>
+
+</div>
+
+<div id="tab6" class="tabcontent">
+  <u>
+
+    <h2 style="display:flex ; justify-content: center;">Leave Application</h2>
+  </u>
+<a href="stuleave.html" class="btn">Student leave</a>
+<a href="facleave.html" class="btn">Faculty leave</a>
+  
+ 
+  
+
+</div>
+
+
+
+<div id="tab7" class="tabcontent">
+  <u>
+    <h2 style="display:flex ; justify-content: center;">Time-Table</h2>
+  </u>
+  <form action="noaction.php" style="display: flex; justify-content: center;">
+    <div class="time">
+      <label for="t1">Subject:</label>
+      <div> 
+        <input type="text" name="" id="t1">
+      </div>
+      <br>
+      <div>
+        <input type="button" value="Add " id="t2" class="btn">
+      </div>
+      <br>
+      <div>
+        <input type="reset" value="Delete " id="t3" class="btn">
+      </div>
+
+    </div>
+  </form>
+</div>
+<hr>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>

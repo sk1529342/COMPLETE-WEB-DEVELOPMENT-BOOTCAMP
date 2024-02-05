@@ -1,0 +1,73 @@
+h2{
+    text-align: center;
+}
+#tab3 {
+    height: max-content;
+    width: max-content;
+    /* margin: 150px 437px; */
+
+    display:FLEX;
+   margin:40px auto;
+    text-align: left;
+    background-color: rgb(70, 239, 239);
+    border: 2px solid blue;
+}
+.student input {
+    float: right;
+    /* text-align: right; */
+}
+
+
+
+
+
+
+
+
+
+#form {
+    display: block;
+    /* border: 2px solid red; */
+    border-radius: 2px;
+    margin: 4px 54px;
+
+}
+
+h1 {
+    /* display: flex; */
+    margin: 13px 132px;
+    /* text-align: center; */
+}
+
+#forgot {
+    /* display: inline; */
+    float: right;
+    margin: 3px 63px;
+    ;
+    /* padding: 3px 1px; */
+}
+
+#reset {
+    margin: 7px 160px;
+}
+
+#reset input {
+    height: 31px;
+    width: 130px;
+    cursor: pointer;
+}
+
+#login {
+
+    margin: 5px 57px;
+}
+
+#login input {
+    cursor: pointer;
+    height: 31px;
+    width: 150px;
+}
+
+#signup {
+    display: flex;
+}

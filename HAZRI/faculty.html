@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<title>faculty</title>
+<link rel="stylesheet" href="hazri1.css">
+<head>
+    <style>
+        .btn {
+            margin: 0px 5px;
+            padding: 2px 15px;
+            border-radius: 10px;
+            background-color: rgb(20, 19, 19);
+            color: white;
+            font-size: 16px;
+            font-family: cursive;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgb(58, 56, 56);
+        }
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            text-align: center;
+            border: 2px solid antiquewhite;
+            background-color: azure;
+            display: none;
+            padding: 56px 52px;
+            border: 1px solid #ccc;
+            /* border-top: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <u>
+        <h1 style="display:flex ; justify-content: center;">Welcome to Faculty</h1>
+          <p style="display:flex ; justify-content: center;">History has proven that those who dares to imagine the impossible are the ones who break all the human limitations.      ~  A.P.J KALAM</p>
+        </u>
+        <hr>
+        <div>
+          <a href="user.html" class="btn1">Logout</a>
+        </div>
+        <hr>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tab1')">View-Class</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Mark-Attendance</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">View-Attendance</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab4')">Apply-Leave</button>
+    </div>
+    <hr>
+    <div id="Tab1" class="tabcontent">
+
+        <h2> The List of the scheduled classes are Below:-</h2>
+        <div>
+
+            <centre>
+                <table style="border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="border: 1px solid black;">Srno.</th>
+                            <th style="border: 1px solid black;">Assigned Class.</th>
+                            <th style="border: 1px solid black;">Semester </th>
+                            <th style="border: 1px solid black;">Subject </th>
+                            <th style="border: 1px solid black;">Day </th>
+                            <th style="border: 1px solid black;">Timing</th>
+                            <th style="border: 1px solid black;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Add your table rows here -->
+                        <tr>
+                            <td style="border: 1px solid black;">1 </td>
+                            <td style="border: 1px solid black;">Btech Cse </td>
+                            <td style="border: 1px solid black;">5</td>
+                            <td style="border: 1px solid black;">Engineering Drawing</td>
+                            <td style="border: 1px solid black;">Monday</td>
+                            <td style="border: 1px solid black;">1-2</td>
+                            <td style="border: 1px solid black;">
+                                <div id="id10">
+                                    <div>
+                                        <input type="submit" value="Accept">
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Reject">
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black;"> 2</td>
+                            <td style="border: 1px solid black;">Btech ECE </td>
+                            <td style="border: 1px solid black;">3 </td>
+                            <td style="border: 1px solid black;">Mechnical fluid </td>
+                            <td style="border: 1px solid black;">Tuesday</td>
+                            <td style="border: 1px solid black;">2-3</td>
+                            <td style="border: 1px solid black;">
+                                <div id="id10">
+                                    <div>
+                                        <input type="submit" value="Accept">
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Reject">
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black;">3 </td>
+                            <td style="border: 1px solid black;">Btech CSE</td>
+                            <td style="border: 1px solid black;">5</td>
+                            <td style="border: 1px solid black;">Enginnering drawing </td>
+                            <td style="border: 1px solid black;">Wednesday</td>
+                            <td style="border: 1px solid black;">12-1 </td>
+                            <td style="border: 1px solid black;">
+                                <div id="id10">
+                                    <div>
+                                        <input type="submit" value="Accept">
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Reject">
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black;">4</td>
+                            <td style="border: 1px solid black;">Btech CSE</td>
+                            <td style="border: 1px solid black;">5</td>
+                            <td style="border: 1px solid black;">Enginnering drawing </td>
+                            <td style="border: 1px solid black;">Thursday</td>
+                            <td style="border: 1px solid black;">3-2 </td>
+                            <td style="border: 1px solid black;">
+                                <div id="id10">
+                                    <div>
+                                        <input type="submit" value="Accept">
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Reject">
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black;">5 </td>
+                            <td style="border: 1px solid black;">Btech CSe</td>
+                            <td style="border: 1px solid black;">5</td>
+                            <td style="border: 1px solid black;">Enginnering Drwaing </td>
+                            <td style="border: 1px solid black;">Friday</td>
+                            <td style="border: 1px solid black;">4-5</td>
+                            <td style="border: 1px solid black;">
+                                <div id="id10">
+                                    <div>
+                                        <input type="submit" value="Accept">
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Reject">
+                                    </div>
+                            </td>
+                    </tbody>
+                </table>
+            </centre>
+
+        </div>
+        <br>
+        <br>
+        <div id="id10">
+            <input type="reset" value="Delete">
+        </div>
+        <div id="id11">
+            <input type="submit" value="Save">
+        </div>
+    </div>
+    </form>
+
+    </div>
+
+    <div id="Tab2" class="tabcontent">
+        <u>
+            <h2>Mark-Attendance</h2>
+        </u>
+        <div>
+            <form action="noaction.php">
+                <label for="b1">Enter class*:</label>
+                <div>
+                    <input type="text" name="" id="b1">
+                </div>
+                <label for="b2">Enter Roll.no*:</label>
+                <div>
+                    <input type="text" name="" id="b2">
+                </div>
+                <label for="b3">Enter subject*:</label>
+                <div>
+                    <input type="text" name="" id="b3">
+                </div>
+                <label for="b4">Enter sub-code*:</label>
+                <div>
+                    <input type="text" name="" id="b4">
+                </div>
+                <label for="b5">Enter Semester*:</label>
+                <div>
+                    <input type="text" name="" id="b5">
+                </div>
+                <label for="b6">Enter Department*:</label>
+                <div>
+                    <select id="b6">
+                        <option value="bra1" selected>CSE</option>
+                        <option value="bra2">ME</option>
+                        <option value="bra3">CIVIL</option>
+                        <option value="bra4">ECE</option>
+                        <option value="bra5">EE</option>
+                    </select>
+                </div>
+            </form>
+            <br>
+            <div>
+                <a class="btn" href="user.html">Back</a>
+                <button onclick="askPermission()" class="btn">Mark Attendance</button>
+
+                <script>
+                    function askPermission() {
+                        // Add constraints object
+                        var constraints = { audio: true, video: true };
+                        // Call getUserMedia
+                        navigator.mediaDevices.getUserMedia(constraints)
+                            .then(function (mediaStream) {
+                                // Redirect to next page
+                                window.location.href = "student-data.html";
+                            })
+                            .catch(function (err) {
+                                console.log("There's an error!" + err.message);
+                            });
+                    }
+                </script>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Tab3" class="tabcontent">
+
+        <h2 style="display:flex ; justify-content: center;">View Attendance</h2>
+        <form action="noaction.php" style="display:flex ; justify-content: center;">
+            <div class="classroom">
+                <label for="ids1">Class Name: </label>
+                <div>
+                    <input type="text" id="ids1">
+                </div>
+                <label for="ids2">Semester: </label>
+                <div>
+                    <input type="number" id="ids2">
+                </div>
+                <label for="m">Subject: </label>
+                <div>
+                    <input type="text" id="m">
+                </div>
+                <label for="n">Subject Code: </label>
+                <div>
+                    <input type="text" id="n">
+                </div>
+                <label for="ids3">Room.no:</label>
+                <div>
+                    <input type="number" id="ids3">
+                </div>
+                <br>
+                <div id="ids5">
+                    <a href="student-data.html" class="btn">View-Attendance</a>
+                    <!-- <input type="submit" value="view Attendance" class="btn"> -->
+                </div>
+                <br>
+
+            </div>
+        </form>
+    </div>
+
+
+    <div id="Tab4" class="tabcontent">
+        <h3 style="display:flex ; justify-content: center;">Apply Leave</h3>
+        <form action="noaction.php" style="display:flex ; justify-content: center;">
+            <div class="Apply leave">
+                <label for="id1">Enter Name: </label>
+                <div>
+                    <input type="text" id="id1">
+                </div>
+                <label for="id1">Empcode.: </label>
+                <div>
+                    <input type="text" id="id1">
+                </div>
+                <label for="id9">Period of leave:</label>
+                <div>
+                    <select id="id9">
+                        <option value="bra1" selected>1</option>
+                        <option value="bra2">2</option>
+                        <option value="bra3">3</option>
+                        <option value="bra4">4</option>
+                        <option value="bra5">More than 4</option>
+                    </select>
+                </div>
+                <br>
+                <div class="Apply leave">
+                    <label for="id1">Reason*:</label>
+                    <div id="ids5">
+                        <textarea name="" id="ids5" cols="15%" rows="10%"></textarea>
+                    </div>
+                    <div id="ids5">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <br>
+                    <div id="ids6">
+                        <input type="button" value="Deny">
+                    </div>
+
+                </div>
+
+                <script>
+                    function openTab(evt, tabName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(tabName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+                </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dATE AND TIME TUTORIAL IN JS</title>
+    <style>
+
+    .container{
+        font-size: 26px;
+    background-color: antiquewhite;
+    border: 4px solid gold;
+    padding: 115px;
+    margin: 42px;
+    align-items: center;
+    border-radius: 223px;
+    }
+    #time{
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+
+      current time is:  <spam id="time"></spam>
+  </div>
+   
+
+    <script>
+        /*console.log('This is date and time tutorials');
+        let dt = new Date();
+        console.log(dt);
+        let dt1 = new Date(0);//reference
+        console.log(dt1);
+        let dt2 = new Date(10000);
+        console.log(dt2);
+        // let dt3=new Date("1920-11-12");//Read about constructor
+        // console.log(dt3);
+        // let newDate =new Date(year, month, date, hours, minutes,seconds,milliseconds);
+        let newDate = new Date(2021, 6, 19, 10, 23, 19, 223);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log('The year is:', yr);
+        let month = newDate.getMonth();
+        console.log('The month is:', month);
+        let date = newDate.getDate();
+        console.log('The date is:', date);
+        let hrs = newDate.getHours();
+        console.log('The hrs is:', hrs);
+        let min = newDate.getMinutes();
+        console.log('The min is:', min);
+        let seconds = newDate.getSeconds();
+        console.log('The seconds is:', seconds);
+        let ms = newDate.getMilliseconds();
+        console.log('The milliseconds is:', ms);
+
+        newDate.setDate(13);
+        newDate.setHours(13);
+        newDate.setFullYear(13);
+
+        console.log(newDate);*/
+        setInterval(updateTime, 1000);
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student</title>
+    <link rel="stylesheet" href="hazri.css">
+    <link rel="stylesheet" href="hazri1.css">
+<style>
+/* Style the tab */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+.btn {
+            margin: 0px 5px;
+            padding: 2px 15px;
+            border-radius: 10px;
+            background-color: rgb(20, 19, 19);
+            color: white;
+            font-size: 16px;
+            font-family: cursive;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgb(58, 56, 56);
+        }
+.tabcontent {
+            text-align: center;
+            border: 2px solid antiquewhite;
+            background-color: azure;
+            display: none;
+            padding: 56px 52px;
+            border: 1px solid #ccc;
+            /* border-top: none; */
+        }
+</style>
+</head>
+<body>
+  <u>
+    <h1 style="display:flex ; justify-content: center;">Welcome to Student Portal</h1>
+      <p style="display:flex ; justify-content: center;">History has proven that those who dares to imagine the impossible are the ones who break all the human limitations.      ~  A.P.J KALAM</p>
+    </u>
+    <hr>
+    <div>
+      <a href="user.html" class="btn1">Logout</a>
+    </div>
+    <hr>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'tab1')">View Attendance</button>
+  <button class="tablinks" onclick="openCity(event, 'tab2')">Apply Leave</button>
+</div>
+
+<div id="tab1" class="tabcontent" >
+  <u>
+    <h2 style="display:flex ; justify-content: center;">View Attendance</h2>
+  </u>
+  <form action="noaction.php" style="display:flex ; justify-content: center;" >
+    <div class="classroom">
+    <label for="ids1">Enter Subject Name: </label>
+            <div>
+              <input type="text" id="ids1">
+            </div>
+            <label for="ids2">Enter Rollno.: </label>
+            <div>
+              <input type="number" id="ids2">
+            </div>
+            <label for="ids3">Enter Subject Code:</label>
+            <div>
+              <input type="number"  id="ids3">
+            </div>
+            <br>  
+            <div id="ids5">
+              <a href="student-data copy 2.html" class="btn">View-Attendance</a>
+              <!-- <input type="submit" value="view Attendance" class="btn"> -->
+            </div>
+            <br>
+            <div id="ids6">
+              <input  type="button" value="Back" class="btn">
+            </div>
+    </div>
+        </form>
+</div>
+
+
+
+<div id="tab2" class="tabcontent">
+  <u>
+
+    <h2 style="display:flex ; justify-content: center;">Apply Leave</h2>
+  </u>
+  <form action="noaction.php" style="display:flex ; justify-content: center;">
+    <div class="Apply leave"> 
+      <label for="id1">Enter Name: </label>
+      <div>
+        <input type="text" id="id1">
+      </div>
+      <label for="id1">Rollno.: </label>
+      <div>
+        <input type="text" id="id1">
+      </div>
+      <label for="id9">Period of leave:</label>
+      <div>
+        <select  id="id9">
+          <option value="bra1" selected>1</option>
+          <option value="bra2">2</option>
+          <option value="bra3">3</option>
+          <option value="bra4">4</option>
+          <option value="bra5">More than 4</option>
+        </select>
+      </div>
+      <br>
+      <div class="Apply leave"> 
+      <label for="id1">Reason </label>
+      <div id="ids5">
+        <textarea name="" id="ids5" cols="15%" rows="10%"></textarea>
+      </div>
+      <div >
+        <a href="end copy.html" class="btn">Submit</a>
+        <!-- <input type="submit" value="Submit" class="btn"> -->
+      </div>
+      <br>
+      <div >
+        <a href="Student.html" class="btn">Deny</a>
+        <!-- <input type="button" value="Deny" class="btn"> -->
+      </div>
+  
+  
+    </div>
+  </form>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>

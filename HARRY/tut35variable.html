@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable and custom properties</title>
+    <style>
+        
+        :root{
+            --primary-color: rgb(246, 80, 30);
+            --danger-color: rgb(6, 43, 251);
+            --maxw:333px;
+        }
+        .container {
+            display: flex;
+            max-width: var(--maxw);
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            --box-colour:violet;
+            background-color: var(--danger-color);
+        }
+
+        .box {
+            --box-colour:violet;
+            /*--box-colour: is a tool used to change the colour of object by changing its color*/
+            width: 200px;
+            height: 200px;
+            background-color:var(--primary-color);
+            border: 2px solid rgb(10, 7, 7);
+            box-shadow:9px 9px var(--danger-color);
+            margin: 2px 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
+
+</body>
+
+</html>

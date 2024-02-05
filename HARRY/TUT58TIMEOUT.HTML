@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET TIMEOUT AND CLEAR TIMEOUT IN JS</title>
+</head>
+
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <script>
+        // setTimeout: Allows us to run the function once after the interval of time
+        // clearTimeout: Allows us to run the function repeatedly  after the interval of time
+        function greet(name, byetext) {
+            console.log("Good morning " + name + "  " + byetext);
+        }
+        /*setTimeout(greet, 5000, "Saurav" , "Take care");
+        //setTimeout(greet(), 12000); wrong as it is calling the function inside sttimeout
+        timeout = setTimeout(greet, 5000, "Saurav", "Take care");
+        console.log(timeout);
+        clearTimeout(timeout);   */
+        //setInterval(greet , 1000, "Good morning", "Saurav");
+        // Intervalid = setInterval(greet, 1000, "Good morning", "Saurav");
+        // clearInterval(intervalid);
+        
+    </script>
+</body>
+
+</html>

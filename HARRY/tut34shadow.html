@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            /* box-shadow: 7px 5px 10px 34px green;  */
+            /* box-shadow: 7px 5px 10px 34px rgba(24, 240, 240, 0.5);  */
+            /* box-shadow: offset-x  offset-y  blur-radius  spread-radius  colourofshadow; */
+            /* box-shadow: -10px -13px grey; */
+            /* in box shadow negative sign is the reverses of the positive shadow */
+            margin: 23px 12px;
+            background-color: blanchedalmond;
+            /* box-shadow: inset 3px 5px green, 4px 6px red;  on the opposite side*/
+            box-shadow: 13px 5px green, 34px 26px red; /*on the same side*/
+        }
+        .card h2{
+            text-shadow: 4px 4px 3px grey;/*text-shadow: offset-x offset-y blur-radius colour of shadow*/
+            /*Also apply for negative sign i.e same as box shadow*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ course</h2>
+            <p> I have started this course which does not mean that we will stop this course to completion.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, nihil. Nihil voluptate culpa repellendus
+                nulla distinctio accusantium nisi. Praesentium exercitationem reprehenderit voluptatibus, architecto in
+                ullam?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, nihil. Nihil voluptate culpa repellendus
+                nulla distinctio accusantium nisi. Praesentium exercitationem reprehenderit voluptatibus, architecto in
+                ullam?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, nihil. Nihil voluptate culpa repellendus
+                nulla distinctio accusantium nisi. Praesentium exercitationem reprehenderit voluptatibus, architecto in
+                ullam?</p>
+        </div>
+    </div>
+</body>
+
+</html>

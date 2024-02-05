@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object in js</title>
+</head>
+<body>
+<script>
+    //printing Math object
+    let m= Math;
+    console.log(m);
+    //printing  constants from Math object
+    console.log('The value of Math.E:', Math.E);
+    console.log('The value of Math.LN2:', Math.LN2);
+    console.log('The value of Math.LN10:', Math.LN10);
+    console.log('The value of Math.PI:', Math.PI);
+
+    //printing  functions from Math object
+let a=45.5954;
+let b= 32;
+//F1:- Math.round(a): Returns a supplied numeric expression rounded to the nearest integer.
+console.log("the value of a and b is:", a, b );
+console.log("the value of a and b is:", Math.round(a), Math.round(b) );
+//F2:- Math.pow(a, b): Returns the value of a base expression taken to a specified power.
+console.log('4 raised the power of 2:', Math.pow(4, 2));
+console.log('5 raised the power of 3:', Math.pow(5, 3));
+//F3:- Math.sqrt(a):Returns the square root of a number.
+console.log('square root of 441 is:', Math.sqrt(441));
+console.log('square root of 442 is:', Math.sqrt(442));
+//F4:- Math.ceil(decimal number) :Returns the smallest integer greater than or equal to its numeric argument.
+console.log('5, 8 rounded up to nearest integer is:', Math.ceil(5.8));
+//F4:- Math.floor(decimal number):Returns the greatest integer less than or equal to its numeric argument.
+console.log('5, 8 rounded down to nearest integer is:', Math.floor(5.8));
+//F4:-Math.abs(decimal number):Returns the absolute value of a number (the value without regard to whether it is positive or negative).
+console.log('Absolute value of 5.566 is:', Math.abs(5.66));
+console.log('Absolute value of -5.566 is:', Math.abs(-5.66));
+
+//F4:Trigonometric functions
+console.log('the vallue of sin(pi/2):', Math.sin(Math.PI/2));
+console.log('the vallue of sin(pi/3):', Math.sin(Math.PI/3));
+console.log('the vallue of sin(pi/4):', Math.sin(Math.PI/2));
+console.log('the vallue of cos(pi):', Math.cos(Math.PI));
+console.log('the vallue of cos(pi):', Math.cos(Math.PI*2));
+console.log('the vallue of tan(pi/4):', Math.tan(Math.PI/4));
+
+//F4: min and max functiions
+console.log('the maximum value among 45,56,67 is:', Math.max(45,56,67));
+console.log('the minimum value among 45,56,67 is:', Math.min(45,56,67));
+//F4:generate a random functions
+
+let r= Math.random();
+console.log('the random no is :', r);
+//random no b/w (a,b)= a+ (b-a)*Math.random()
+let a1= 344;
+let b1= 345;
+let m1 =a1+ (b1-a1)*Math.random();
+console.log('random no b/w (a1,b1) :', m1);
+
+</script>
+</body>
+</html>

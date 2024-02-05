@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json objects</title>
+</head>
+<body>
+    <script>
+        let jsonobj= {
+            name: 'saurav',
+            class: 'B.tech', branch: 'cse', roll: '224092', group:'A2'
+        }
+        console.log(jsonobj);
+        let jsonstru= JSON.stringify(jsonobj);
+        console.log(jsonstru);
+
+        jsonstru= jsonstru.replace('saurav', 'Gaurav');
+        console.log(jsonstru);
+
+        newjsonobj= JSON.parse(jsonstru);
+        console.log(newjsonobj);
+    </script>
+</body>
+</html>

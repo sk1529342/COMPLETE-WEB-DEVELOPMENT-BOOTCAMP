@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazri-1</title>
+  <!-- <link rel="stylesheet" href="tab3.css"> -->
+  <style>
+    
+    body {
+      background-color: antiquewhite;
+      /* background: url("IMG/colleges\ -\ Copy\ \(2\).jpg"); */
+    }
+
+   
+
+    .tab-container {
+      float: left;
+      width: max-content;
+      display: block;
+       flex-direction: column; 
+      justify-content: space-around;
+      padding: 10px;
+
+
+    }
+
+
+    .tab {
+      display: block;
+      color: BLACK;
+      font-size: 20px;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .tab:hover {
+      border-radius: 10px;
+      border: 2px solid red;
+      background-color: aqua;
+    }
+    .active-tab {
+      background-color: #04f856;
+      box-shadow: 2px rgb(237, 7, 7);
+    }
+
+    /* Hide tab content by default */
+    .tab-content {
+      display: none;
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="tab-container">
+    <div class="tab" onclick="openTab('tab1')">Add Classroom</div>
+    <div class="tab" onclick="openTab('tab2')">Add Faculty</div>
+    <div class="tab" onclick="openTab('tab3')">Add Student</div>
+    <div class="tab" onclick="openTab('tab4')">Faculty Attendance</div>
+    <div class="tab" onclick="openTab('tab5')">Student Attendance</div>
+    <div class="tab" onclick="openTab('tab6')">Upload Time-Table</div>
+    <div class="tab" onclick="openTab('tab7')">View Leave</div>
+  </div>
+
+  <div id="tab1" class="tab-content">
+<h2> Add Classroom</h2>
+    <form action="noaction.php">
+<div class="classroom">
+<label for="ids1">Enter Class Name: </label>
+        <div>
+          <input type="text" id="ids1">
+        </div>
+        <label for="ids2">Classroom no.: </label>
+        <div>
+          <input type="number" id="ids2">
+        </div>
+        <label for="ids3">Semester:</label>
+        <div>
+          <input type="number"  id="ids3">
+        </div>
+        <label for="ids4">Department:</label>
+        <div>
+          <select  id="ids4">
+            <option value="op1">CSE</option>
+            <option value="op2">BCA</option>
+            <option value="op3">CHE</option>
+            <option value="op4">ME</option>
+            <option value="op5">EE</option>
+            <option value="op6">ECE</option>
+            <option value="op7" selected>CSE</option>
+          </select>
+        </div>       
+        <div id="ids5">
+          <input type="submit" value="Add class">
+        </div>
+        <div id="ids6">
+          <input type="button" value="Back">
+        </div>
+</div>
+    </form>
+
+
+  </div>
+
+  <div id="tab2" class="tab-content">
+<h2>Add faculty</h2>
+<form action="noaction.php">
+  <div class="faculty"> 
+    <label for="id1">Faculty Name: </label>
+    <div>
+      <input type="text" id="id1">
+    </div>
+    <label for="id1">Empcode: </label>
+    <div>
+      <input type="text" id="id1">
+    </div>
+    <label for="id9">Department:</label>
+    <div>
+      <select  id="id9">
+        <option value="bra1" selected>CSE</option>
+        <option value="bra2">ME</option>
+        <option value="bra3">CIVIL</option>
+        <option value="bra4">ECE</option>
+        <option value="bra5">EE</option>
+      </select>
+    </div>
+    <label for="id1">Subject: </label>
+    <div>
+      <input type="text" id="id1">
+    </div>
+    <label for="id1">Email: </label>
+    <div>
+      <input type="email" id="id1">
+    </div>
+    <label for="id1">Class Assigned: </label>
+    <div>
+      <input type="text" id="id1">
+    </div>
+    <label for="id6">Classroom no.: </label>
+    <div>
+      <input type="number" id="id6">
+    </div>
+    <label for="id7">Semester:</label>
+    <div>
+      <input type="number"  id="id7">
+    </div>
+    <label for="id7">Subject Code:</label>
+    <div>
+      <input type="number"  id="id7">
+    </div>
+    <label for="id7">Timing:</label>
+    <div>
+    <input type="time" name="time" id="id7">
+    </div>
+    <div id="ids5">
+      <input type="submit" value="Assign">
+    </div>
+    <div id="ids6">
+      <input type="button" value="Back">
+    </div>
+
+
+  </div>
+</form>
+  </div>
+
+  <div id="tab3" class="tab-content">
+    <h2>Student Details</h2>
+    <form action="noactiontobetaken.php">
+      <div class="student">
+        <label for="id1">Student Name: </label>
+        <div>
+          <input type="text" id="id1">
+        </div>
+        <label for="id2">Father's Name: </label>
+        <div>
+         <input type="text" id="id2">
+        </div>
+        <label for="id3">Mother's Name: </label>
+        <div>
+          <input type="text" id="id3">
+        </div>
+        <label for="id4">Roll.No: </label>
+        <div>
+          <input type="number" id="id4">
+        </div>
+        <label for="id5">DOB: </label>
+        <div>
+          <input type="date" id="id5">
+        </div>
+        <label for="id6">Classroom no.: </label>
+        <div>
+          <input type="number" id="id6">
+        </div>
+        <label for="id7">Semester:</label>
+        <div>
+          <input type="number"  id="id7">
+        </div>
+        <label for="id8">Course:</label>
+        <div>
+          <select  id="id8">
+            <option value="op1">M.Tech</option>
+            <option value="op2">BCA</option>
+            <option value="op3">MCA</option>
+            <option value="op4">B.Com</option>
+            <option value="op5">B.Sc</option>
+            <option value="op6">B.A</option>
+            <option value="op7" selected>B.Tech</option>
+          </select>
+        </div>
+        <label for="id9">Branch:</label>
+        <div>
+          <select  id="id9">
+            <option value="bra1" selected>CSE</option>
+            <option value="bra2">ME</option>
+            <option value="bra3">CIVIL</option>
+            <option value="bra4">ECE</option>
+            <option value="bra5">EE</option>
+          </select>
+        </div>
+        <br>
+        <div id="id10">
+          <input type="reset" value="Delete">
+        </div>
+        <div id="id11">
+          <input type="submit" value="Save">
+        </div>
+    </form>
+  </div>
+
+
+  <div id="tab4" class="tab-content">
+    <!-- Content for Tab 3 goes here -->
+    <p>This is the content of Tab 4.</p>
+  </div>
+  <div id="tab5" class="tab-content">
+    <h2>Student Attendance</h2>
+  
+  
+  
+  
+  
+  </div>
+  <div id="tab6" class="tab-content">
+    <!-- Content for Tab 3 goes here -->
+    <p>This is the content of Tab 6.</p>
+  </div>
+  <div id="tab7" class="tab-content">
+    <!-- Content for Tab 3 goes here -->
+    <p>This is the content of Tab 7.</p>
+  </div>
+
+  <script>
+    function openTab(tabName) {
+      // Hide all tab contents
+      var tabContents = document.getElementsByClassName('tab-content');
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = 'none';
+      }
+
+      // Remove active class from all tabs
+      var tabs = document.getElementsByClassName('tab');
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active-tab');
+      }
+
+      // Show the clicked tab content and mark it as active
+      document.getElementById(tabName).style.display = 'block';
+      document.querySelector('.tab[data-tab="' + tabName + '"]').classList.add('active-tab');
+    }
+  </script>
+
+</body>
+
+</html>

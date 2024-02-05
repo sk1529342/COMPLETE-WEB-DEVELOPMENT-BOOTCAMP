@@ -1,0 +1,101 @@
+REMAINDER
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 100%;
+            height: 555px;
+            display: flex;
+            /* initialize the contaier as a flexbox */
+            /* flex properties for flex container */
+            /* flex-direction: is row by default */
+
+
+            /* flex-direction: row;
+             flex-direction: row-reverse;
+             flex-direction: column;
+             flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */
+            /* flex-wrap: is no-wrap by default */
+
+            /* flex-wrap: wrap-reverse; */
+            /* in short flex-flow: direction wrap; */
+            /* flex-flow: row-reverse wrap; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+            /* flex-direction: column; */
+        }
+
+        .items {
+            border: 2px solid green;
+            background-color: tomato;
+            margin: 5px 5px;
+            padding: 4px;
+            width: 120px;
+            height: 150px;
+        }
+
+        #item-1 {
+            /* flex properties for a flex items */
+            /* Higher the order later it shows up in the container  increasing order*/
+            /* order: 4; */
+            /* each  items covers the width in the ratio of their respective flex-grow: ; value */
+            /* grow and shrink are just opposite to each other grow-increases shrink-decreasess */
+            /* flex-grow: 4; */
+            /* flex-shrink: 2; */
+        }
+
+        #item-2 {
+            /* order: 1; */
+            /* flex-grow: 2 ; */
+            /* flex-shrink: 4; */
+            /* flex-basis: 120px; */
+            /* when flex direction is set to row flex-basis: will control width */
+            /* when flex direction is set to column flex basis: will control height */
+        }
+
+        #item-3 {
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* shortcut; flex: flex grow flex shrink flex basis; respectively */
+            /* flex: 2 2 150px; */
+            /* align-self: flex-end; */
+            /* align-self: flex-start; */
+            align-self: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flexbox: Flexbox is a one-dimensional layout method for laying out items in rows or columns.
+    #CSS flexbox is a better way to align items into a container.
+    Flexbox=flexible + box -->
+    <h1>This is flexbox</h1>
+    <div class="container">
+        <div class="items" id="item-1">First Box</div>
+        <div class="items" id="item-2">Second Box</div>
+        <div class="items" id="item-3">Third Box</div>
+        <!-- <div class="items" id="item-4">Fourth Box</div> -->
+        <!-- <div class="items" id="item-5">Fifth Box</div> -->
+        <!-- <div class="items" id="item-6">Sixth Box</div> -->
+    </div>
+
+</body>
+
+</html>

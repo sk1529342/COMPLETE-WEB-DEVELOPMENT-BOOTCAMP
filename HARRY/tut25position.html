@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+ <!-- S FAR S; STATIC(default), FIXED, ABSOLUTE, RELATIVE, STICKY -->
+    <style>
+        .container {
+            border: 5px solid black;
+            background-color: grey;
+            height: 3444px;
+
+        }
+
+        .box {
+            border: 4px solid red;
+            height: 150px;
+            width: 150px;
+            display: inline-block;
+            margin: 5px;
+            background-color: aqua;
+        }
+
+        /* position; static(default), fixed, absolute, relative, sticky */
+        #box3 {
+text-align: center;
+            /* relative; positions the element relative to its normal position and will leave a gap at its normal position */
+            /* position: relative;
+        top: 45px;
+        left: 45px; */
+        /* absolute; positions the element relative to the position of its first parent  */
+            /* position: absolute;
+        top: 45px;
+        left: 45px; */
+        /* fixed; positions the element relative to the browser window; */
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            /* position: sticky; 
+            top: 93px; */
+            /* bottom: 45px; */
+            /* right : 0px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us:</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+</body>
+
+</html>
